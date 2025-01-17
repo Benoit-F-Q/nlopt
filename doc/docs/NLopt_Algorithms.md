@@ -357,6 +357,8 @@ I converted Prof. Luksan's code to C with the help of [f2c](https://en.wikipedia
 
 One of the parameters of this algorithm is the number *M* of gradients to "remember" from previous optimization steps: increasing *M* increases the memory requirements but may speed convergence. NLopt sets *M* to a heuristic value by default, but this can be [changed by the set_vector_storage function](NLopt_Reference.md#vector-storage-for-limited-memory-quasi-newton-algorithms).
 
+An additional parameters of L-BFGS `luksan_tolg` (tolerance for the gradient norm) is not adjustable from the common NLOpt interface. It is declared and described in `luksan.h`.
+
 ### Preconditioned truncated Newton
 
 This algorithm in NLopt, is based on a Fortran implementation of a preconditioned inexact truncated Newton algorithm written by Prof. Ladislav Luksan, and graciously posted online under the GNU LGPL at:

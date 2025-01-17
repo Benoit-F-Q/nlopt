@@ -577,7 +577,7 @@ nlopt_result luksan_pnet(int n, nlopt_func f, void *f_data,
      double *xl, *xu, *gf, *gn, *s, *xo, *go, *xs, *gs, *xm, *gm, *u1, *u2;
      double gmax, minf_est;
      double xmax = 0; /* no maximum */
-     double tolg = 0; /* default gradient tolerance */
+     double tolg = luksan_tolg; /* default gradient tolerance */
      int iest = 0; /* we have no estimate of min function value */
      int mit = 0, mfg = 0; /* default no limit on #iterations */
      int mfv = stop->maxeval;

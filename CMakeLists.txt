@@ -208,7 +208,7 @@ set (NLOPT_SOURCES
 
 if(NLOPT_LUKSAN)
   list(APPEND NLOPT_SOURCES
-    src/algs/luksan/plis.c src/algs/luksan/plip.c src/algs/luksan/pnet.c src/algs/luksan/mssubs.c src/algs/luksan/pssubs.c src/algs/luksan/luksan.h)
+    src/algs/luksan/plis.c src/algs/luksan/plip.c src/algs/luksan/pnet.c src/algs/luksan/mssubs.c src/algs/luksan/pssubs.c src/algs/luksan/luksan.h src/algs/luksan/luksan.c)
 endif()
 
 
